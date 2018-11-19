@@ -11,3 +11,6 @@
 *.fls
 *.ilg
 *.ind
+*.brf
+*.lof
+*.lot
