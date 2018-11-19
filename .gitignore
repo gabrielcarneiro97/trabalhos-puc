@@ -1,1 +1,13 @@
 *.pdf
+*.log
+*.aux
+*.bbl
+*.idx
+*.tec
+*.toc
+*.synctex.gz
+*.blg
+*.fdb_latexmk
+*.fls
+*.ilg
+*.ind
