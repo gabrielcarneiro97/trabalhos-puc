@@ -29,6 +29,10 @@
 \usepackage{color}				% Controle das cores
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{microtype} 			% para melhorias de justificação
+\usepackage{lipsum}
+
+\DisemulatePackage{setspace}
+\usepackage{setspace}
 % ---
 
 % ---
@@ -36,6 +40,16 @@
 % ---
 \usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
 \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+
+\usepackage{abnt-puc}
+% --- 
+
+% ---
+% FONTE
+% ---
+\usepackage{mathptmx} % Times New Roman
+% \usepackage{helvet} % Helvica
+% --- 
 
 % --- 
 % CONFIGURAÇÕES DE PACOTES
@@ -61,22 +75,23 @@
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
-\titulo{Título}
+\instituicao{PONTIFÍCIA UNIVERSIDADE CATÓLICA DE MINAS GERAIS}
+\campus{São Gabriel}
+\cursotipo{Graduação}
+\curso{Psicologia}
+\local{Belo Horizonte}
+
 \autor{Gabriel Carneiro de Castro}
-\local{Brasil, Minas Gerais}
-\data{2018}
-% \orientador{}
+\areaconcentracao{}
+
+\titulo{}
+\subtitulo{}
+\orientador{}
 \coorientador{}
-\instituicao{%
-	Pontifícia Universidade Católica de Minas Gerais - PUC Minas
-  \par
-  Psicologia - São Gabriel
-  \par
-  Graduação}
+\data{2018}
+
+\preambulo{Trabalho apresentado à disciplina da Faculdade de Psicologia da Pontifícia Universidade Católica de Minas Gerais}
 \tipotrabalho{Trabalho Acadêmico}
-% O preambulo deve conter o tipo do trabalho, o objetivo, 
-% o nome da instituição e a área de concentração 
-\preambulo{Preambulo}
 % ---
 
 
@@ -162,12 +177,6 @@
 % ELEMENTOS TEXTUAIS
 % ----------------------------------------------------------
 \textual
-
-% ---
-% Capitulo com exemplos de comandos inseridos de arquivo externo 
-% ---
-\include{abntex2-modelo-include-comandos}
-
 
 \part{Referenciais teóricos}
 
