@@ -20,6 +20,7 @@
 % INICIO DAS CUSTOMIZACOES PARA A UNIVERSIDADE PUC MINAS
 % ---
 \usepackage{scrextend}
+\usepackage{titlesec}
 
 \ProvidesPackage{abnt-puc}[2018/11/20 Pacote com algumas exigências da PUC-Minas]
 
@@ -42,6 +43,37 @@
 
 \renewcommand{\imprimirtitulo}{\MakeUppercase\thetitle}
 
+\renewcommand{\ABNTEXpartfont}{\rmfamily}
+\renewcommand{\ABNTEXpartfontsize}{\normalsize}
+
+\renewcommand{\ABNTEXchapterfont}{\normalfont\bfseries\normalsize}
+\renewcommand{\ABNTEXchapterfontsize}{\normalsize}
+
+\titleformat*{\section}{\bfseries\rmfamily\normalsize}
+
+\renewcommand{\ABNTEXsubsectionfont}{\rmfamily}
+\renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
+
+\renewcommand{\ABNTEXsubsubsectionfont}{\rmfamily}
+\renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
+
+\renewcommand{\ABNTEXsubsubsubsectionfont}{\rmfamily}
+\renewcommand{\ABNTEXsubsubsubsectionfontsize}{\normalsize}
+
+\addto\captionsbrazil{% portugues-brasil
+  %% ajusta nomes padroes do babel
+  \renewcommand{\contentsname}{SUMÁRIO}
+  \renewcommand{\bibname}{REFERÊNCIAS}
+  \renewcommand{\indexname}{ÍNDICE}
+  \renewcommand{\listfigurename}{LISTA DE ILUSTRAÇÕES}
+  \renewcommand{\listtablename}{LISTA DE TABELAS}
+  %% ajusta nomes usados com a macro \autoref
+  \renewcommand{\pageautorefname}{PÁGINA}
+  \renewcommand{\sectionautorefname}{SEÇÃO}
+  \renewcommand{\subsectionautorefname}{SUBSEÇÃO}
+  \renewcommand{\subsubsectionautorefname}{SUBSEÇÃO}
+  \renewcommand{\paragraphautorefname}{SUBSEÇÃO}
+}
 
 % alterando a capa
 \renewcommand{\imprimircapa}{%
