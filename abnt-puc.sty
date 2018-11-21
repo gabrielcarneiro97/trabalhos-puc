@@ -77,6 +77,8 @@
 \setlength{\parskip}{0.2cm}  % tente também \onelineskip
 % ---
 
+\renewcommand{\imprimirorientadorRotulo}{Orientador(a): }
+
 \providecommand{\imprimirareaconcentracao}{}
 \newcommand{\areaconcentracao}[1]{\renewcommand{\imprimirareaconcentracao}{#1}}
 
@@ -85,6 +87,11 @@
 
 \providecommand{\imprimircurso}{}
 \newcommand{\curso}[1]{\renewcommand{\imprimircurso}{#1}}
+
+\providecommand{\imprimirprofessor}{}
+\newcommand{\professor}[1]{\renewcommand{\imprimirprofessor}{#1}}
+
+\newcommand{\imprimirprofessorRotulo}{Professor(a): }
 
 \providecommand{\imprimircursotipo}{}
 \newcommand{\cursotipo}[1]{\renewcommand{\imprimircursotipo}{#1}}
@@ -134,8 +141,8 @@
     \center
     \imprimirinstituicao\par
     \abntex@ifnotempty{\imprimircursotipo}{\imprimircursotipo}
-    \abntex@ifnotempty{\imprimircurso}{ em \imprimircurso}
-    \abntex@ifnotempty{\imprimircampus}{ - Campus \imprimircampus}
+    \abntex@ifnotempty{\imprimircurso}{em \imprimircurso}
+    \abntex@ifnotempty{\imprimircampus}{- Campus \imprimircampus}
     
     \vspace*{1cm}
     
@@ -187,6 +194,10 @@
       \begin{addmargin}[7cm]{0cm}
         {\setstretch{1.0}
           \imprimirpreambulo\par
+        }
+        \abntex@ifnotempty{\imprimirprofessor}{
+          \vspace*{.5cm}
+          {\imprimirprofessorRotulo~\imprimirprofessor\par}
         }
         \abntex@ifnotempty{\imprimirorientador}{
           \vspace*{.5cm}
