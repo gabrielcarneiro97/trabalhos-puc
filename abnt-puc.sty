@@ -77,7 +77,8 @@
 \setlength{\parskip}{0.2cm}  % tente também \onelineskip
 % ---
 
-\renewcommand{\imprimirorientadorRotulo}{Orientador(a): }
+\renewcommand{\orientadorname}{Orientador(a):}
+\renewcommand{\coorientadorname}{Coorientador(a):}
 
 \providecommand{\imprimirareaconcentracao}{}
 \newcommand{\areaconcentracao}[1]{\renewcommand{\imprimirareaconcentracao}{#1}}
@@ -91,7 +92,7 @@
 \providecommand{\imprimirprofessor}{}
 \newcommand{\professor}[1]{\renewcommand{\imprimirprofessor}{#1}}
 
-\newcommand{\imprimirprofessorRotulo}{Professor(a): }
+\newcommand{\imprimirprofessorRotulo}{Professor(a):}
 
 \providecommand{\imprimircursotipo}{}
 \newcommand{\cursotipo}[1]{\renewcommand{\imprimircursotipo}{#1}}
@@ -99,7 +100,7 @@
 \providecommand{\imprimircampus}{}
 \newcommand{\campus}[1]{\renewcommand{\imprimircampus}{#1}}
 
-\newcommand{\imprimirareaconcentracaoRotulo}{Área de concentração: }
+\newcommand{\imprimirareaconcentracaoRotulo}{Área de concentração:}
 
 \renewcommand{\imprimirtitulo}{\MakeUppercase\thetitle}
 
@@ -160,11 +161,11 @@
 
     \vspace*{\fill}
     
-    {\large\imprimirlocal}
+    {\imprimirlocal}
 
     \par
 
-    {\large\imprimirdata}
+    {\imprimirdata}
     \vspace*{1cm}
   \end{capa}
 }
@@ -219,11 +220,11 @@
 
     \vspace*{\fill}
     
-    {\large\imprimirlocal}
+    {\imprimirlocal}
 
     \par
 
-    {\large\imprimirdata}
+    {\imprimirdata}
     \vspace*{1cm}
   \end{center}
 }
