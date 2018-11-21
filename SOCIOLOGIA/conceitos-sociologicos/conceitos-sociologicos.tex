@@ -1,0 +1,134 @@
+%% Modelo modificado da anbTex2 sob o nome original: abtex2-modelo-trabalho-academico.tex
+%% Todos os direitos reservados de acordo com o copyright do arquivo original.
+%% abtex2-modelo-trabalho-academico.tex, v-1.9.6 laurocesar
+%% Copyright 2012-2016 by abnTeX2 group at http://www.abntex.net.br/ 
+
+\documentclass[
+	% -- opções da classe memoir --
+	12pt,				% tamanho da fonte
+	openany,
+	oneside,			% para impressão em recto e verso oneside/twoside
+	a4paper,			% tamanho do papel. 
+	% -- opções da classe abntex2 --
+	chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+	% -- opções do pacote babel --
+	english,			% idioma adicional para hifenização
+	brazil				% o último idioma é o principal do documento
+]{abntex2}
+
+% PACOTE
+\usepackage{../../abnt-puc}
+% --- 
+
+
+% FONTE
+\usepackage{mathptmx} % Times New Roman
+% \usepackage{helvet} % Helvica
+% --- 
+
+% Informações de dados para CAPA e FOLHA DE ROSTO
+\instituicao{PONTIFÍCIA UNIVERSIDADE CATÓLICA DE MINAS GERAIS}
+\campus{São Gabriel}
+\cursotipo{Graduação}
+\curso{Psicologia}
+\local{Belo Horizonte}
+
+\autor{Gabriel Carneiro de Castro \\ Gustavo Cortez Ferraz \\ Renata Cardoso Soares \\ William Lincoln Aguiar \\ Yan Késsimos Ricoy}
+\areaconcentracao{Sociologia}
+
+\titulo{Conceitos Sociológicos}
+\subtitulo{}
+\orientador{Angêla Maria Siman}
+\coorientador{}
+\data{2018}
+
+\preambulo{Trabalho apresentado à disciplina de Sociologia da Faculdade de Ciências Sociais da PUC-Minas, a partir de definições de conceitos de Peter Berger com exemplificações do filme “Minha Vida em Cor de Rosa” \cite{minhaVidaEmCorDeRosa}.}
+\tipotrabalho{Trabalho Acadêmico}
+% ---
+
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
+		colorlinks=true,       		% false: boxed links; true: colored links
+    	linkcolor=black,          	% color of internal links
+    	citecolor=black,        		% color of links to bibliography
+    	filecolor=magenta,      		% color of file links
+		urlcolor=black,
+		bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% compila o indice
+\makeindex
+% ---
+
+% Início do documento
+\begin{document}
+
+% Seleciona o idioma do documento (conforme pacotes do babel)
+%\selectlanguage{english}
+\selectlanguage{brazil}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing
+
+% ELEMENTOS PRÉ-TEXTUAIS
+\pretextual
+
+% Capa
+\imprimircapa
+% ---
+
+% Folha de rosto
+% (o * indica que haverá a ficha bibliográfica)
+\imprimirfolhaderosto
+% ---
+
+% inserir o sumario
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+% ---
+
+% ELEMENTOS TEXTUAIS
+\textual
+
+\chapter{Controle Social}
+Diversos métodos utilizados em uma sociedade para “filtrar” a população, extraindo os membros obstinados. Segundo \citeonline{perspectivasSociologicasPeter}, “nenhuma sociedade pode existir sem controle social”, uma vez que, se não houver, os grupos podem se desfazer facilmente. Uma das formas mais comuns de controle social é a violência física. Por mais que em muitos casos tal método não chegue a ser utilizado, é de fato importante que todos tenham a consciência que se necessário, será cabível o uso da força para reprimir cidadãos teimosos. Outra forma de controle social é o “ridículo e a difamação”, no qual uma pessoa, em uma situação social, deixa de fazer algo ou agir de determinada maneira para que não seja alvo de zombarias. Em pequenas sociedades, onde a maioria da população tem maior visibilidade, a difamação tem ainda mais eficácia.
+
+No filme Minha Vida em Cor de Rosa \cite{minhaVidaEmCorDeRosa} podemos ver alguns exemplos de controle social. Vemos Ludovic sendo duramente oprimido por causa de sua identidade de gênero, pois em uma sociedade heteronormativa ele se vê um transexual, caracteristica que não é aceita por seu meio social. O controle social é tão forte que os pais de Ludovic tentam "curá-lo" levando-o ao psicológo, há também diversos momentos onde os adultos zombam do menino e ainda afirmam que aquilo era apenas uma fase que logo passaria.
+
+\chapter{Mobilidade Social}
+Fenômeno em que um indivíduo pode alterar sua posição social de acordo com a Estratificação Social. Um exemplo a ser considerado é o de um trabalhador que, ao receber uma mudança nos fatores geracionais ou profissionais, tem sua posição social alterada. Uma sociedade estratificada é considerada aquela em que não há mobilidade social, ou seja, independente de qualquer circunstância, o indivíduo mantém sua classe social.
+
+Muitas vezes pensamos em mobilidade social apenas em um âmbito positivo, ou seja, indivíduos melhorando sua posição social, contudo no filme vemos um exemplo de mobilidade social no sentido contrário. Por causa do preconceito que Ludovic sofre, sua família acaba sendo atingida também. Ludovic começa a ter um envolvimento amoroso com Jérôme, comportamento que é duramente reprimido tanto por sua família como pela família de Jérôme. Além desse fato, Ludovic ainda tenta se passar por Branca de Neve durante o teatro da escola, fazendo com que toda a comunidade fique enfurecida, gerando tanto a expulsão do menino da escola como a demissão de seu pai Pierre de seu atual emprego, vale ressaltar que o patrão de Pierre, Albert, era pai de Jérôme, e ele tinha ficado nada satisfeito com o que tinha acontecido entre os dois meninos. Pierre ficou algum tempo desempregado, até que encontrasse um novo emprego, emprego esse que tinha um salário inferior ao seu emprego anterior, o que forçou a família a mudar-se para uma região mais simples \cite{minhaVidaEmCorDeRosa}.
+
+\chapter{Estratificação Social}
+Conceito que designa que toda sociedade é composta por uma hierarquia, seja ela de poder, privilégio ou prestígio. A adição das camadas inferiores até as superiores forma o sistema de estratificação da sociedade. Há vários tipos de estratificação de várias formas diferentes, e como citado no livro de \citeonline{perspectivasSociologicasPeter}, o sistema de estratificação social das sociedades da Índia são, de fato, diferentes do sistema de estratificação social da sociedade ocidental. A forma de estratificação mais importante nas sociedades contemporâneas é do sistema de classes -que pode ser compreendido de várias formas- determinado pelas condições econômicas, ou seja, quem for dotado de maior poder econômico, tem grandes chances de obter maior poder. Nos Estados Unidos, a estratificação é racial, ou seja, a classe social do indivíduo é formada assim que o mesmo nasce; caso ele seja negro, não importa sua riqueza, sempre será negro; para o branco, não importa o quão baixo (em níveis de costumes sociais) seja, sempre será branco.
+
+\chapter{Socialização}
+Um processo que permite aos indivíduos se integrarem uns aos outros através da transmissão de valores; processo inacabável, que continua por toda a vida. A socialização se inicia ainda na infância (socialização primária), quando a criança tem contato direto com pessoas mais velhas que repassam a ela algumas morais de suas culturas. Importantes agentes da socialização primária são a família, a escola, as instituições, a mídia, dentre outras, cada uma com uma forma de socialização diferenciada. Já na socialização secundária, os valores repassados são valores profissionais, ou seja, quando o indivíduo mantém contato com colegas de trabalho.
+
+\chapter{Instituições}
+Conceito definido como um conjunto de ações sociais que padronizam o comportamento do indivíduo perante a sociedade, como por exemplo: leis, regras morais, religião, casamento, dentre outras. Tal padronização o faz, também, julgar que qualquer outra forma de conduta que seja diferente à sua conduta pré-definida institucionalmente seja inimaginável.
+% ---
+
+% ELEMENTOS PÓS-TEXTUAIS
+\postextual
+
+\bibliography{conceitos-sociologicos}
+% ---
+
+\end{document}
+% ---

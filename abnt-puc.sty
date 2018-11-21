@@ -15,6 +15,7 @@
 %%
 %% Further information about abnTeX2 are available on https://github.com/abntex/abntex2
 %%
+\ProvidesPackage{abnt-puc}[2018/11/20 Pacote com algumas exigências da PUC-Minas]
 
 % ---
 % INICIO DAS CUSTOMIZACOES PARA A UNIVERSIDADE PUC MINAS
@@ -76,9 +77,6 @@
 \setlength{\parskip}{0.2cm}  % tente também \onelineskip
 % ---
 
-
-\ProvidesPackage{abnt-puc}[2018/11/20 Pacote com algumas exigências da PUC-Minas]
-
 \providecommand{\imprimirareaconcentracao}{}
 \newcommand{\areaconcentracao}[1]{\renewcommand{\imprimirareaconcentracao}{#1}}
 
@@ -131,8 +129,8 @@
 }
 
 % alterando a capa
-\renewcommand{\imprimircapa}{%
-  \begin{capa}%
+\renewcommand{\imprimircapa}{
+  \begin{capa}
     \center
     \imprimirinstituicao\par
     \abntex@ifnotempty{\imprimircursotipo}{\imprimircursotipo}
@@ -147,9 +145,9 @@
     \begin{center}
       {\setstretch{1.5}
         \textbf\imprimirtitulo
-        \abntex@ifnotempty{\imprimirsubtitulo}{%
+        \abntex@ifnotempty{\imprimirsubtitulo}{
           :\par\textbf\imprimirsubtitulo
-        }%
+        }
       }
     \end{center}
 
@@ -167,8 +165,6 @@
 
 % folha de rosto 
 
-\makeatletter
-
 \renewcommand{\folhaderostocontent}{
   \begin{center}
     \center
@@ -179,36 +175,36 @@
     \begin{center}
       {\setstretch{1.5}
         \textbf\imprimirtitulo
-        \abntex@ifnotempty{\imprimirsubtitulo}{%
+        \abntex@ifnotempty{\imprimirsubtitulo}{
           :\par\textbf\imprimirsubtitulo
-        }%
+        }
       }
     \end{center}
     \vfill
 
-    \abntex@ifnotempty{\imprimirpreambulo}{%
+    \abntex@ifnotempty{\imprimirpreambulo}{
       \hspace{.45\textwidth}
       \begin{addmargin}[7cm]{0cm}
         {\setstretch{1.0}
           \imprimirpreambulo\par
         }
-        \abntex@ifnotempty{\imprimirorientador}{%
+        \abntex@ifnotempty{\imprimirorientador}{
           \vspace*{.5cm}
-          {\imprimirorientadorRotulo~\imprimirorientador\par}%
-        }%
+          {\imprimirorientadorRotulo~\imprimirorientador\par}
+        }
         
-        \abntex@ifnotempty{\imprimircoorientador}{%
+        \abntex@ifnotempty{\imprimircoorientador}{
           \vspace*{.5cm}
-          {\imprimircoorientadorRotulo~\imprimircoorientador\par}%
-        }%
+          {\imprimircoorientadorRotulo~\imprimircoorientador\par}
+        }
 
-        \abntex@ifnotempty{\imprimirareaconcentracao}{%
+        \abntex@ifnotempty{\imprimirareaconcentracao}{
           \vspace*{.5cm}
-          {\imprimirareaconcentracaoRotulo~\imprimirareaconcentracao\par}%
-        }%
-      \end{addmargin}%
+          {\imprimirareaconcentracaoRotulo~\imprimirareaconcentracao\par}
+        }
+      \end{addmargin}
       \vspace*{\fill}
-    }%
+    }
 
     \vspace*{\fill}
     
@@ -221,8 +217,6 @@
   \end{center}
 }
 
-\makeatother
-
 % ---
-% FIM DAS CUSTOMIZACOES PARA A UNIVERSIDADE XXX
+% FIM DAS CUSTOMIZACOES PARA A UNIVERSIDADE PUC MINAS
 % ---
