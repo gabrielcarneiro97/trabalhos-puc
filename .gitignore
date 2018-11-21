@@ -16,3 +16,4 @@
 *.lot
 *.bcf
 *.run.xml
+*_temp.tex
